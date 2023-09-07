@@ -366,7 +366,6 @@
         <div class="container">
           <div class="section-header text-center">
             <h2>Meet Our Expert Instructors</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
           <div class="row">
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -375,8 +374,8 @@
                   <img src="/assets/img/meet/1.png" alt="Team Image">
                 </div>
                 <div class="pera" style="margin-top: 20px;margin-left: 15px">
-                  <h5 style="font-weight: bold">Lorem ipsum <img src="/assets/img/icon/star.png" alt=""></h5>
-                  <p>Lorem ipsum Lorem ipsum</p>
+                  <h5 style="font-weight: bold">Faisal Ahmed<img src="/assets/img/icon/star.png" alt=""></h5>
+                  <p>Founder</p>
                 </div>
               </div>
             </div>
