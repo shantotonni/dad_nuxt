@@ -1,5 +1,5 @@
 //for server
-//let api_url = 'https://exchange.acibd.com/'
+//let api_url = 'http://apidadhq.newmusicparadigm.com/'
 //for Local
 let api_url = 'http://127.0.0.1:8000/'
 
