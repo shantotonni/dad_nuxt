@@ -33,7 +33,7 @@ export default {
       { src: '/assets/js/main.js' }
     ],
     link: [
-      // { rel: 'icon', type: 'image/x-icon', href: '/assets/img/icon/fav.png' },
+      { rel: 'icon', type: 'image/x-icon', href: '/assets/img/logo/fav.png' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap',type: 'text/css' },
       { rel: 'stylesheet', href: 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css',type: 'text/css' },
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css' ,type: 'text/css'},
