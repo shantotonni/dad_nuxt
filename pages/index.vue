@@ -14,7 +14,7 @@
 <!--              <h1 class="animated fadeInLeft">Your Are A <span style="color: #00ACFF">Great Dad</span></h1>-->
               <h1 class="animated fadeInLeft">Fathers: The Heart of the Family</h1>
               <p class="animated fadeInRight" style="font-size: 20px;">Our community celebrates fathers as the heart of the family. Join us and grow with our enriching courses.</p>
-              <a class="btn animated fadeInUp" href="#">Program</a>
+              <a class="btn animated fadeInUp" href="program">Program</a>
             </div>
           </div>
 
@@ -23,7 +23,7 @@
               <div class="carousel-caption">
                 <h1 class="animated fadeInLeft">Together, We Make a Home</h1>
                 <p class="animated fadeInRight" style="font-size: 20px;">Build a strong family foundation with our community and take courses that strengthen your bonds.</p>
-                <a class="btn animated fadeInUp" href="#">Program</a>
+                <a class="btn animated fadeInUp" href="program">Program</a>
               </div>
           </div>
 
@@ -32,7 +32,7 @@
               <div class="carousel-caption">
                 <h1 class="animated fadeInLeft">Guiding Every Step of the Way</h1>
                 <p class="animated fadeInRight" style="font-size: 20px;">Discover how our community can support you in guiding your child's journey. Explore our events and courses today</p>
-                <a class="btn animated fadeInUp" href="#">Program</a>
+                <a class="btn animated fadeInUp" href="program">Program</a>
               </div>
           </div>
         </div>
@@ -157,13 +157,12 @@
                 <p style="margin-bottom: 6px"><img src="/assets/img/icon/1.png" alt="" style="height: 18px;width: 17px;"> <span style="font-size: 14px;margin-left: 5px;color: black">•	Expertise and Quality: Dive into expertly crafted courses that prioritize depth and excellence in content.</span></p>
                 <p style="margin-bottom: 6px"><img src="/assets/img/icon/1.png" alt="" style="height: 18px;width: 17px"> <span style="font-size: 14px;margin-left: 5px;color: black">•	Engaging Learning: Immerse yourself in a dynamic learning environment that encourages active participation and exploration.</span></p>
                 <p><img src="/assets/img/icon/1.png" alt="" style="height: 18px;width: 17px"> <span style="font-size: 14px;margin-left: 5px;color: black">•	Customized Learning Paths: Tailor your educational journey to your preferences and pace, shaping your learning experience.</span></p>
-                <!--
-                <div style="display: flex;background: #F5F4EF;padding: 17px;">
+               
+                 <!--<div style="display: flex;background: #F5F4EF;padding: 17px;">
                   <img src="/assets/img/icon/2.png" style="height: 40px" alt="">
                   <p style="margin-left: 10px;font-size: 13px;margin-bottom: 0px">Learn at your own pace, with lifetime
                     access on mobile and desktop.</p>
-                </div>
-                -->
+                </div> -->
               </div>
             </div>
             <div class="col-lg-7 col-md-6">
@@ -186,8 +185,8 @@
                 <div class="col-6 col-sm-6">
                   <div class="fact-text" style="margin-top: 60px;">
                     <h2 style="color: #00A8FF;font-size: 25px">You are a Great Dad</h2>
-                    <p style="color: black;font-size: 15px">Empower your fatherhood journey with 'You Are a Great Dad,' fostering stronger bonds and cherished memories.</p>
-                    <a href="#" class="btn" style="background: #00A8FF;padding: 11px 14px;color: white;margin-top: 15px;font-size: 13px">View Details</a>
+                    <p style="color: black;font-size: 12px">Empower your fatherhood journey while fostering stronger bonds and cherished memories.</p>
+                    <a href="program" class="btn" style="background: #00A8FF;padding: 11px 14px;color: white;margin-top: 15px;font-size: 13px">View Details</a>
                   </div>
                 </div>
                 <div class="col-6 col-sm-6">
@@ -202,8 +201,8 @@
                 <div class="col-6">
                   <div class="fact-text" style="margin-top: 60px;">
                     <h2 style="color: #00A8FF;font-size: 25px">The Shepherd</h2>
-                    <p style="color: black;font-size: 15px">Guiding fathers with Muslim values to lead their families with love, faith, and compassion.</p>
-                    <a href="#" class="btn" style="background: #00A8FF;padding: 11px 14px;color: white;margin-top: 15px;font-size: 13px">View Details</a>
+                    <p style="color: black;font-size: 12px">Guiding fathers with Muslim values to lead their families with love, faith, and compassion.</p>
+                    <a href="program" class="btn" style="background: #00A8FF;padding: 11px 14px;color: white;margin-top: 15px;font-size: 13px">View Details</a>
                   </div>
                 </div>
                 <div class="col-6">
@@ -260,11 +259,11 @@
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
               <div class="team-item" style="box-shadow: 0px 0px 12px 12px #e7e6e0;">
                 <div class="team-img">
-                  <img src="/assets/img/event/1.png" style="border-style: dotted;padding: 14px;color: #dfdbd5" alt="Team Image">
+                  <img src="/assets/img/event/DadandDaughter.PNG" style="border-style: dotted;padding: 14px;color: #dfdbd5" alt="Team Image">
                 </div>
                 <div class="pera" style="margin-top: 20px">
-                  <h5 style="text-align: center;font-weight: bold">Lorem ipsum</h5>
-                  <p style="text-align: center">Lorem ipsum Lorem ipsum</p>
+                  <h5 style="text-align: center;font-weight: bold">Daddy and Daughter day at the Masjid</h5>
+                  <p style="text-align: center">Special day at the mosque for Daddy and Daughter</p>
                 </div>
                 <div class="team-text">
                   <div class="row">
@@ -367,7 +366,6 @@
         <div class="container">
           <div class="section-header text-center">
             <h2>Meet Our Expert Instructors</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
           <div class="row">
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -376,8 +374,8 @@
                   <img src="/assets/img/meet/1.png" alt="Team Image">
                 </div>
                 <div class="pera" style="margin-top: 20px;margin-left: 15px">
-                  <h5 style="font-weight: bold">Lorem ipsum <img src="/assets/img/icon/star.png" alt=""></h5>
-                  <p>Lorem ipsum Lorem ipsum</p>
+                  <h5 style="font-weight: bold">Faisal Ahmed<img src="/assets/img/icon/star.png" alt=""></h5>
+                  <p>Founder</p>
                 </div>
               </div>
             </div>

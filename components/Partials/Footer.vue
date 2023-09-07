@@ -4,30 +4,34 @@
     <div class="footer wow fadeIn" data-wow-delay="0.3s">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-lg-3">
-            <div class="footer-contact">
+          <div class="col-md-6 col-lg-4">
+             <div class="footer-link">
+              <h2>Contact Us</h2>
+              <p>Send an Email at dadhq@example.com</p>
+              <p>Call us: 123-4456-789</p>
+              <p>Address: </p>
+            </div>
+            <!-- <div class="footer-contact">
               <h2>About US</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Amet atque beatae corporis culpa cumque, debitis dolore eius error facilis harum magni odit perspiciatis sapiente. Facilis illum incidunt iste magnam neque.</p>
-            </div>
+            </div> -->
           </div>
-          <div class="col-md-6 col-lg-3">
+          <!-- <div class="col-md-6 col-lg-3">
             <div class="footer-link">
-              <h2>Support</h2>
-              <a href="">Send an Email</a>
-              <a href="">Call us</a>
-              <a href="">Live Chat</a>
-              <a href="">FAQs</a>
+              <h2>Contact Us</h2>
+              <p>Send an Email at dadhq@example.com</p>
+              <p>Call us: 123-4456-789</p>
             </div>
-          </div>
+          </div> -->
           <div class="col-md-6 col-lg-3">
-            <div class="footer-link">
+            <!-- <div class="footer-link">
               <h2>Information</h2>
               <a href="">News & Insight</a>
               <a href="">Track Order</a>
               <a href="">Delivery</a>
               <a href="">Return</a>
-            </div>
+            </div> --> 
           </div>
           <div class="col-md-6 col-lg-3">
             <div class="newsletter">
