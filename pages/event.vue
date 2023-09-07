@@ -21,18 +21,18 @@
     <div class="team">
       <div class="container">
         <div class="section-header text-center">
-          <h2>Event</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <h2>Events</h2>
+      
         </div>
         <div class="row">
           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="team-item" style="box-shadow: 0px 0px 12px 12px #e7e6e0;">
               <div class="team-img">
-                <img src="/assets/img/event/1.png" style="border-style: dotted;padding: 14px;color: #dfdbd5" alt="Team Image">
+                <img src="/assets/img/event/DadandDaughter.PNG" style="border-style: dotted;padding: 14px;color: #dfdbd5" alt="Team Image">
               </div>
               <div class="pera" style="margin-top: 20px">
-                <h5 style="text-align: center;font-weight: bold">Lorem ipsum</h5>
-                <p style="text-align: center">Lorem ipsum Lorem ipsum</p>
+                <h5 style="text-align: center;font-weight: bold">Daddy and Daughter day at the Masjid</h5>
+                <p style="text-align: center">Special day at the mosque for Daddy and Daughter</p>
               </div>
               <div class="team-text">
                 <div class="row">
