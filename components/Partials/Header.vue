@@ -11,7 +11,9 @@
 
           <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
             <div class="mr-auto">
-              <nuxt-link to="/" style="font-size: 27px;color: white;font-weight: bold">Dad<span style="color: #00ACFF;font-weight: bold">HQ</span></nuxt-link>
+              <nuxt-link to="/" style="font-size: 27px;color: white;font-weight: bold">
+                <img src="/assets/img/logo/logo.png" alt="">
+              </nuxt-link>
             </div>
             <div class="navbar-nav ml-auto">
               <nuxt-link to="/" class="nav-item nav-link active">Home</nuxt-link>

@@ -414,50 +414,6 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="team-item" style="box-shadow: 0px 0px 12px 12px #f1eeee;">
-                <div class="team-img">
-                  <img src="/assets/img/meet/1.png" alt="Team Image">
-                </div>
-                <div class="pera" style="margin-top: 20px;margin-left: 15px">
-                  <h5 style="font-weight: bold">Lorem ipsum <img src="/assets/img/icon/star.png" alt=""></h5>
-                  <p>Lorem ipsum Lorem ipsum</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="team-item" style="box-shadow: 0px 0px 12px 12px #f1eeee;">
-                <div class="team-img">
-                  <img src="/assets/img/meet/2.png" alt="Team Image">
-                </div>
-                <div class="pera" style="margin-top: 20px;margin-left: 15px">
-                  <h5 style="font-weight: bold">Lorem ipsum <img src="/assets/img/icon/star.png" alt=""></h5>
-                  <p>Lorem ipsum Lorem ipsum</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="team-item" style="box-shadow: 0px 0px 12px 12px #f1eeee;">
-                <div class="team-img">
-                  <img src="/assets/img/meet/3.png" alt="Team Image">
-                </div>
-                <div class="pera" style="margin-top: 20px;margin-left: 15px">
-                  <h5 style="font-weight: bold">Lorem ipsum <img src="/assets/img/icon/star.png" alt=""></h5>
-                  <p>Lorem ipsum Lorem ipsum</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="team-item" style="box-shadow: 0px 0px 12px 12px #f1eeee;">
-                <div class="team-img">
-                  <img src="/assets/img/meet/4.png" alt="Team Image">
-                </div>
-                <div class="pera" style="margin-top: 20px;margin-left: 15px">
-                  <h5 style="font-weight: bold">Lorem ipsum <img src="/assets/img/icon/star.png" alt=""></h5>
-                  <p>Lorem ipsum Lorem ipsum</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
