@@ -69,8 +69,8 @@
                   <i class="flaticon-building"></i>
                 </div>
                 <div class="feature-text">
-                  <h3>Expand Your Knowledge and Skills</h3>
-                  <p>Discover endless opportunities to expand your knowledge and skills, opening new doors to success and personal growth.</p>
+                  <h3>Expand Your Knowledge</h3>
+                  <p>Discover endless opportunities to expand your knowledge, opening new doors to personal growth.</p>
                 </div>
               </div>
             </div>
@@ -81,7 +81,7 @@
                 </div>
                 <div class="feature-text">
                   <h3>Embrace the Freedom of Lifelong Learning</h3>
-                  <p>Immerse yourself in the world of lifelong learning, where knowledge knows no bounds, and curiosity fuels your journey.</p>
+                  <p>Knowledge knows no bounds, and curiosity fuels your journey.</p>
                 </div>
               </div>
             </div>
@@ -91,6 +91,7 @@
       <!-- Feature End-->
 
       <!-- Service Start -->
+      <!--
       <div class="service">
         <div class="container">
           <div class="section-header text-center">
@@ -138,6 +139,7 @@
           </div>
         </div>
       </div>
+      -->
       <!-- Service End -->
 
       <!-- About Start -->
@@ -150,17 +152,18 @@
               </div>
               <div class="about-text">
                 <p>
-                  Welcome to a personalized learning experience designed to cater to your unique educational needs.
-                  Our commitment to fostering your growth sets us apart. Discover what defines us:
+                  Welcome to a community of beloved fathers, where our shared commitment to nurturing and supporting each other sets us apart. Here, we embrace the journey of fatherhood and all its joys and challenges. Join us as we explore what defines us as fathers and how we can collectively grow in this beautiful journey of parenthood.
                 </p>
                 <p style="margin-bottom: 6px"><img src="/assets/img/icon/1.png" alt="" style="height: 18px;width: 17px;"> <span style="font-size: 14px;margin-left: 5px;color: black">•	Expertise and Quality: Dive into expertly crafted courses that prioritize depth and excellence in content.</span></p>
                 <p style="margin-bottom: 6px"><img src="/assets/img/icon/1.png" alt="" style="height: 18px;width: 17px"> <span style="font-size: 14px;margin-left: 5px;color: black">•	Engaging Learning: Immerse yourself in a dynamic learning environment that encourages active participation and exploration.</span></p>
                 <p><img src="/assets/img/icon/1.png" alt="" style="height: 18px;width: 17px"> <span style="font-size: 14px;margin-left: 5px;color: black">•	Customized Learning Paths: Tailor your educational journey to your preferences and pace, shaping your learning experience.</span></p>
+                <!--
                 <div style="display: flex;background: #F5F4EF;padding: 17px;">
                   <img src="/assets/img/icon/2.png" style="height: 40px" alt="">
                   <p style="margin-left: 10px;font-size: 13px;margin-bottom: 0px">Learn at your own pace, with lifetime
                     access on mobile and desktop.</p>
                 </div>
+                -->
               </div>
             </div>
             <div class="col-lg-7 col-md-6">
@@ -363,7 +366,7 @@
       <div class="team" style="background: white">
         <div class="container">
           <div class="section-header text-center">
-            <h2>Meet Our Expart Instructor</h2>
+            <h2>Meet Our Expert Instructors</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
           <div class="row">
@@ -466,7 +469,7 @@
         <div class="container">
           <div class="section-header text-center">
             <h2>You May Ask</h2>
-            <p>Frequently Asked Question</p>
+            <p>Frequently Asked Questions</p>
           </div>
           <div class="row">
             <div class="col-md-6">
@@ -624,44 +627,24 @@
             <div class="col-12">
               <div class="testimonial-slider">
                 <div class="slider-item">
-                  <h3>Customer Name</h3>
-                  <h4>profession</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                  <h3>Yusuf</h3>
+                  <h4>Attendee March 2022</h4>
+                  <p>“Mr. Faisel was more of a friend rather than an instructor of this course. From one father to another he was caring, up lifting, and most importantly understanding of day to day father struggles.”</p>
                 </div>
                 <div class="slider-item">
-                  <h3>Customer Name</h3>
-                  <h4>profession</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                  <h3></h3>
+                  <h4>Attendee March 2022</h4>
+                  <p>“This program made me realize so many little things such as how important it is to spend time with your children, and the impact it has on their development. ”</p>
                 </div>
                 <div class="slider-item">
-                  <h3>Customer Name</h3>
-                  <h4>profession</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                  <h3></h3>
+                  <h4>Attendee</h4>
+                  <p>“This course has highlighted many core areas that I want to practice in my day to day life. ”</p>
                 </div>
                 <div class="slider-item">
-                  <h3>Customer Name</h3>
-                  <h4>profession</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                </div>
-                <div class="slider-item">
-                  <h3>Customer Name</h3>
-                  <h4>profession</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                </div>
-                <div class="slider-item">
-                  <h3>Customer Name</h3>
-                  <h4>profession</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                </div>
-                <div class="slider-item">
-                  <h3>Customer Name</h3>
-                  <h4>profession</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
-                </div>
-                <div class="slider-item">
-                  <h3>Customer Name</h3>
-                  <h4>profession</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.</p>
+                  <h3></h3>
+                  <h4>Attendee</h4>
+                  <p>“The importance of listening to your children needs in a neutral way, and encouraging them to open up about their feelings. ”</p>
                 </div>
               </div>
             </div>
