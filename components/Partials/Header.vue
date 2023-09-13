@@ -24,8 +24,9 @@
               <nuxt-link to="contact" class="nav-item nav-link">Contact Us</nuxt-link>
             </div>
             <div class="ml-auto">
-              <a class="btn" href="#" style="background: #00ACFF;color: white;margin-right:10px">Registration</a>
-              <a class="btn" href="#" style="background: #456878;color: white">Member Login</a>
+              <nuxt-link class="btn" v-if="$auth.loggedIn === false" to="registration" style="background: #00ACFF;color: white;margin-right:10px">Registration</nuxt-link>
+              <nuxt-link class="btn" to="login" v-if="$auth.loggedIn === false" style="background: #456878;color: white">Member Login</nuxt-link>
+              <a class="btn" v-if="$auth.loggedIn === true" @click="logout" style="background: #456878;color: white">Logout</a>
             </div>
           </div>
         </nav>
@@ -44,7 +45,10 @@ export default {
     }
   },
   methods: {
-   //
+    logout(){
+      this.$auth.logout();
+      this.$router.push('/login');
+    }
   }
 }
 </script>
