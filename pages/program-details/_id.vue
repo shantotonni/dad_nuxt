@@ -20,8 +20,9 @@
     <div class="fact">
       <div class="container-fluid">
         <div class="row counters">
-          <div class="col-md-6 fact-left wow slideInLeft" v-for="(program, i) in programs" :key="program.id" v-if="programs.length">
-            <div class="row" style="background: #F6F0E0;padding: 20px;margin: 0 auto;box-shadow: 0px 0px 12px 12px #e7e6e0;min-height: 760px">
+          <div class="col-md-2 fact-right wow slideInRight"></div>
+          <div class="col-md-8 fact-left wow slideInLeft">
+            <div class="row" style="background: #F6F0E0;padding: 20px;margin: 0 auto;box-shadow: 0px 0px 12px 12px #e7e6e0;min-height: 470px">
               <div class="col-6 col-sm-6">
                 <div class="fact-text" style="margin-top: 60px;">
                   <h2 style="color: #00A8FF;font-size: 25px">{{ program.title }}</h2>
@@ -33,6 +34,7 @@
                   <img :src="programImage(program.image)" style="height: 240px" class="img-fluid" alt="">
                 </div>
               </div>
+
               <div class="col-12 col-sm-12">
                 <p v-html="program.description" style="margin-top: 10px;color: black"> </p>
                 <a class="btn btn-primary px-3" style="color: white" @click="programJoin(program.id)" v-if="$auth.loggedIn !== false">Join Now</a>
@@ -41,6 +43,7 @@
               </div>
             </div>
           </div>
+          <div class="col-md-2 fact-right wow slideInRight"></div>
         </div>
       </div>
     </div>
@@ -50,29 +53,32 @@
 
 <script>
 import {base_url} from "~/plugins/base_url";
-
 export default {
-  name: "event.vue",
+  name: "program.vue",
   auth:false,
   head() {
     return {
-      title: "Event | DadHQ"
+      title: "Program | DadHQ"
     };
   },
   data() {
     return {
-      programs : [],
+      program : [],
     };
   },
+  created() {
+    //
+  },
   mounted() {
-    document.title = 'Program | DadHQ';
-    this.getAllProgram()
+    document.title = 'Program Details | DadHQ';
+    this.programDetails();
   },
   methods: {
-    getAllProgram(){
-      this.$axios.get( base_url + 'api/get-all-program').then((response)=>{
-        this.programs = response.data.data;
+    programDetails() {
+      this.$axios.get( base_url + 'api/get-program-details?id=' + this.$route.params.id).then((response)=>{
+        this.program = response.data.details;
       }).catch((error)=>{
+        console.log(error);
       })
     },
     programImage(image){

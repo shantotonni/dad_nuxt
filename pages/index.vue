@@ -14,7 +14,7 @@
 <!--              <h1 class="animated fadeInLeft">Your Are A <span style="color: #00ACFF">Great Dad</span></h1>-->
               <h1 class="animated fadeInLeft">Fathers: The Heart of the Family</h1>
               <p class="animated fadeInRight" style="font-size: 20px;">Our community celebrates fathers as the heart of the family. Join us and grow with our enriching courses.</p>
-              <a class="btn animated fadeInUp" href="program">Program</a>
+              <nuxt-link class="btn animated fadeInUp" to="program">Program</nuxt-link>
             </div>
           </div>
 
@@ -23,7 +23,7 @@
               <div class="carousel-caption">
                 <h1 class="animated fadeInLeft">Together, We Make a Home</h1>
                 <p class="animated fadeInRight" style="font-size: 20px;">Build a strong family foundation with our community and take courses that strengthen your bonds.</p>
-                <a class="btn animated fadeInUp" href="program">Program</a>
+                <nuxt-link class="btn animated fadeInUp" to="program">Program</nuxt-link>
               </div>
           </div>
 
@@ -32,7 +32,7 @@
               <div class="carousel-caption">
                 <h1 class="animated fadeInLeft">Guiding Every Step of the Way</h1>
                 <p class="animated fadeInRight" style="font-size: 20px;">Discover how our community can support you in guiding your child's journey. Explore our events and courses today</p>
-                <a class="btn animated fadeInUp" href="program">Program</a>
+                <nuxt-link class="btn animated fadeInUp" to="program">Program</nuxt-link>
               </div>
           </div>
         </div>
@@ -157,7 +157,7 @@
                 <p style="margin-bottom: 6px"><img src="/assets/img/icon/1.png" alt="" style="height: 18px;width: 17px;"> <span style="font-size: 14px;margin-left: 5px;color: black">•	Expertise and Quality: Dive into expertly crafted courses that prioritize depth and excellence in content.</span></p>
                 <p style="margin-bottom: 6px"><img src="/assets/img/icon/1.png" alt="" style="height: 18px;width: 17px"> <span style="font-size: 14px;margin-left: 5px;color: black">•	Engaging Learning: Immerse yourself in a dynamic learning environment that encourages active participation and exploration.</span></p>
                 <p><img src="/assets/img/icon/1.png" alt="" style="height: 18px;width: 17px"> <span style="font-size: 14px;margin-left: 5px;color: black">•	Customized Learning Paths: Tailor your educational journey to your preferences and pace, shaping your learning experience.</span></p>
-               
+
                  <!--<div style="display: flex;background: #F5F4EF;padding: 17px;">
                   <img src="/assets/img/icon/2.png" style="height: 40px" alt="">
                   <p style="margin-left: 10px;font-size: 13px;margin-bottom: 0px">Learn at your own pace, with lifetime
@@ -175,39 +175,22 @@
       </div>
       <!-- About End -->
 
-
       <!-- program Start -->
       <div class="fact">
         <div class="container-fluid">
           <div class="row counters">
-            <div class="col-md-6 fact-left wow slideInLeft">
+            <div class="col-md-6 fact-left wow slideInLeft" v-for="(program, i) in programs" :key="program.id" v-if="programs.length">
               <div class="row" style="background: #F6F0E0;padding: 20px;margin: 0 auto;box-shadow: 0px 0px 12px 12px #e7e6e0;">
                 <div class="col-6 col-sm-6">
                   <div class="fact-text" style="margin-top: 60px;">
-                    <h2 style="color: #00A8FF;font-size: 25px">You are a Great Dad</h2>
-                    <p style="color: black;font-size: 12px">Empower your fatherhood journey while fostering stronger bonds and cherished memories.</p>
-                    <a href="program" class="btn" style="background: #00A8FF;padding: 11px 14px;color: white;margin-top: 15px;font-size: 13px">View Details</a>
+                    <h2 style="color: #00A8FF;font-size: 25px">{{ program.title }}</h2>
+                    <p style="color: black;font-size: 12px">{{ program.short }}</p>
+                    <nuxt-link :to="`/program-details/${program.id}`" class="btn" style="background: #00A8FF;padding: 11px 14px;color: white;margin-top: 15px;font-size: 13px">View Details</nuxt-link>
                   </div>
                 </div>
                 <div class="col-6 col-sm-6">
                   <div>
-                    <img src="/assets/img/service/2.png" style="height: 240px" class="img-fluid" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 fact-right wow slideInRight">
-              <div class="row" style="background: #F6F0E0;padding: 20px;margin: 0 auto;box-shadow: 0px 0px 12px 12px #e7e6e0;">
-                <div class="col-6">
-                  <div class="fact-text" style="margin-top: 60px;">
-                    <h2 style="color: #00A8FF;font-size: 25px">The Shepherd</h2>
-                    <p style="color: black;font-size: 12px">Guiding fathers with Muslim values to lead their families with love, faith, and compassion.</p>
-                    <a href="program" class="btn" style="background: #00A8FF;padding: 11px 14px;color: white;margin-top: 15px;font-size: 13px">View Details</a>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div>
-                    <img src="/assets/img/service/3.png" style="height: 240px" class="img-fluid" alt="">
+                    <img :src="programImage(program.image)" style="height: 240px" class="img-fluid" alt="">
                   </div>
                 </div>
               </div>
@@ -247,7 +230,6 @@
       </div>
       <!-- Video End -->
 
-
       <!-- Team Start -->
       <div class="team">
         <div class="container">
@@ -256,94 +238,20 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
           <div class="row">
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s" v-for="(event, i) in events" :key="event.id" v-if="events.length">
               <div class="team-item" style="box-shadow: 0px 0px 12px 12px #e7e6e0;">
                 <div class="team-img">
-                  <img src="/assets/img/event/DadandDaughter.PNG" style="border-style: dotted;padding: 14px;color: #dfdbd5" alt="Team Image">
+                  <img :src="eventImage(event.image)"  style="border-style: dotted;padding: 14px;color: #dfdbd5;height: 260px" alt="Team Image">
                 </div>
                 <div class="pera" style="margin-top: 20px">
-                  <h5 style="text-align: center;font-weight: bold">Daddy and Daughter day at the Masjid</h5>
-                  <p style="text-align: center">Special day at the mosque for Daddy and Daughter</p>
-                </div>
-                <div class="team-text">
-                  <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                      <p style="text-align: left;margin-left: 10px"><img src="/assets/img/icon/calendar.png" alt="">
-                        <span style="margin-left: 5px">8/21/2023</span>
-                      </p>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                      <p style="text-align: left;margin-left: 10px">View Details
-                        <img src="/assets/img/icon/right-arrow.png" style="margin-left: 5px;" alt="">
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="team-item" style="box-shadow: 0px 0px 12px 12px #e7e6e0;">
-                <div class="team-img">
-                  <img src="/assets/img/event/2.png" style="border-style: dotted;padding: 14px;color: #dfdbd5" alt="Team Image">
-                </div>
-                <div class="pera" style="margin-top: 20px">
-                  <h5 style="text-align: center;font-weight: bold">Lorem ipsum</h5>
+                  <h5 style="text-align: center;font-weight: bold">{{ event.title }}</h5>
                   <p style="text-align: center">Lorem ipsum Lorem ipsum</p>
                 </div>
                 <div class="team-text">
                   <div class="row">
                     <div class="col-lg-6 col-md-6">
-                      <p style="text-align: left;margin-left: 10px"><img src="/assets/img/icon/calendar.png" alt="">
-                        <span style="margin-left: 5px">8/21/2023</span>
-                      </p>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                      <p style="text-align: left;margin-left: 10px">View Details
-                        <img src="/assets/img/icon/right-arrow.png" style="margin-left: 5px;" alt="">
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="team-item" style="box-shadow: 0px 0px 12px 12px #e7e6e0;">
-                <div class="team-img">
-                  <img src="/assets/img/event/3.png" style="border-style: dotted;padding: 14px;color: #dfdbd5" alt="Team Image">
-                </div>
-                <div class="pera" style="margin-top: 20px">
-                  <h5 style="text-align: center;font-weight: bold">Lorem ipsum</h5>
-                  <p style="text-align: center">Lorem ipsum Lorem ipsum</p>
-                </div>
-                <div class="team-text">
-                  <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                      <p style="text-align: left;margin-left: 10px"><img src="/assets/img/icon/calendar.png" alt="">
-                        <span style="margin-left: 5px">8/21/2023</span>
-                      </p>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                      <p style="text-align: left;margin-left: 10px">View Details
-                        <img src="/assets/img/icon/right-arrow.png" style="margin-left: 5px;" alt="">
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="team-item" style="box-shadow: 0px 0px 12px 12px #e7e6e0;">
-                <div class="team-img">
-                  <img src="/assets/img/event/4.png" style="border-style: dotted;padding: 14px;color: #dfdbd5" alt="Team Image">
-                </div>
-                <div class="pera" style="margin-top: 20px">
-                  <h5 style="text-align: center;font-weight: bold">Lorem ipsum</h5>
-                  <p style="text-align: center">Lorem ipsum Lorem ipsum</p>
-                </div>
-                <div class="team-text">
-                  <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                      <p style="text-align: left;margin-left: 10px"><img src="/assets/img/icon/calendar.png" alt="">
+                      <p style="text-align: left;margin-left: 10px">
+                        <img src="/assets/img/icon/calendar.png" alt="">
                         <span style="margin-left: 5px">8/21/2023</span>
                       </p>
                     </div>
@@ -416,7 +324,6 @@
         </div>
       </div>
       <!-- Team End -->
-
 
       <!-- FAQs Start -->
       <div class="faqs">
@@ -559,7 +466,6 @@
       </div>
       <!-- FAQs End -->
 
-
       <!-- Testimonial Start -->
       <div class="testimonial wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
@@ -606,7 +512,6 @@
         </div>
       </div>
       <!-- Testimonial End -->
-
 
       <!-- Blog Start -->
       <div class="blog">
@@ -683,6 +588,7 @@
 </template>
 
 <script>
+import {base_url} from "~/plugins/base_url";
 export default {
   auth:false,
   name: "IndexPage",
@@ -694,14 +600,37 @@ export default {
   },
   data() {
     return {
+      programs : [],
+      events : [],
       brands: [],
     };
   },
   mounted() {
         document.title = 'Home | DadHQ';
         this.loadSlickSlider()
+        this.getAllProgram()
+        this.getAllEvents()
     },
     methods: {
+      getAllProgram(){
+        this.$axios.get( base_url + 'api/get-all-program').then((response)=>{
+          this.programs = response.data.data;
+        }).catch((error)=>{
+        })
+      },
+      getAllEvents(){
+        this.$axios.get( base_url + 'api/get-all-events').then((response)=>{
+          console.log(response)
+          this.events = response.data.data;
+        }).catch((error)=>{
+        })
+      },
+      programImage(image){
+        return base_url + "images/program/"+ image;
+      },
+      eventImage(image){
+        return base_url + "images/event/"+ image;
+      },
       loadSlickSlider(){
         // Testimonial Slider
         $('.testimonial-slider').slick({

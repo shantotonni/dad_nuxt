@@ -109,7 +109,7 @@ export default {
   },
   methods: {
     registration(){
-      this.form.post( base_url + 'api/registration').then((response)=>{
+      this.form.post( base_url + 'api/auth/registration').then((response)=>{
         console.log(response)
         if (response.data.message === 'success'){
           this.$router.push('/login')

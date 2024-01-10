@@ -9,13 +9,8 @@
               <h2>Contact Us</h2>
               <p>Send an Email at dadhq@example.com</p>
               <p>Call us: 123-4456-789</p>
-              <p>Address: </p>
+<!--              <p>Address: </p>-->
             </div>
-            <!-- <div class="footer-contact">
-              <h2>About US</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Amet atque beatae corporis culpa cumque, debitis dolore eius error facilis harum magni odit perspiciatis sapiente. Facilis illum incidunt iste magnam neque.</p>
-            </div> -->
           </div>
           <!-- <div class="col-md-6 col-lg-3">
             <div class="footer-link">
@@ -25,45 +20,33 @@
             </div>
           </div> -->
           <div class="col-md-6 col-lg-3">
-            <!-- <div class="footer-link">
+            <div class="footer-link">
               <h2>Information</h2>
-              <a href="">News & Insight</a>
-              <a href="">Track Order</a>
-              <a href="">Delivery</a>
-              <a href="">Return</a>
-            </div> --> 
+              <nuxt-link to="/about">About</nuxt-link>
+              <nuxt-link to="/event">Event</nuxt-link>
+              <nuxt-link to="/program">Program</nuxt-link>
+              <nuxt-link to="/contact">Contact Us</nuxt-link>
+            </div>
           </div>
           <div class="col-md-6 col-lg-3">
             <div class="newsletter">
-              <h2>Subscribe to our Newsletter</h2>
+              <h2>About</h2>
               <p>
-                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu
+                Welcome to a personalized learning experience designed to cater to your unique educational needs. Our commitment to fostering your growth sets us apart.
               </p>
-              <div class="form">
-                <input class="form-control" placeholder="Email here">
-                <button class="btn">Submit</button>
-              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="container footer-menu">
-        <div class="f-menu">
-          <a href="">Terms of use</a>
-          <a href="">Privacy policy</a>
-          <a href="">Cookies</a>
-          <a href="">Help</a>
-          <a href="">FQAs</a>
-        </div>
-      </div>
+      <hr style="color: white">
       <div class="container copyright">
         <div class="row">
           <div class="col-md-6">
             <p>&copy; <a href="#">DadHQ</a>, All Right Reserved.</p>
           </div>
-          <!--                        <div class="col-md-6">-->
-          <!--                            <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>-->
-          <!--                        </div>-->
+          <div class="col-md-6">
+              <p>Designed By <a href="https://apexstrive.ca/">Apex Strive Solutions Inc</a></p>
+          </div>
         </div>
       </div>
     </div>
