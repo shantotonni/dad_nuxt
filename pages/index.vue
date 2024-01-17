@@ -8,33 +8,33 @@
           <li data-target="#carousel" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="/assets/img/slider/1.png" alt="Carousel Image">
+          <div class="carousel-item" :class="i === 0 ? 'active' : ''" v-for="(slider, i) in sliders" :key="slider.id" v-if="sliders.length">
+            <img :src="sliderImage(slider.image)" alt="Carousel Image">
             <div class="carousel-caption">
 <!--              <h1 class="animated fadeInLeft">Your Are A <span style="color: #00ACFF">Great Dad</span></h1>-->
-              <h1 class="animated fadeInLeft">Fathers: The Heart of the Family</h1>
-              <p class="animated fadeInRight" style="font-size: 20px;">Our community celebrates fathers as the heart of the family. Join us and grow with our enriching courses.</p>
+              <h1 class="animated fadeInLeft">{{ slider.title }}</h1>
+              <p class="animated fadeInRight" style="font-size: 18px;" v-html="slider.paragraph"></p>
               <nuxt-link class="btn animated fadeInUp" to="program">Program</nuxt-link>
             </div>
           </div>
 
-          <div class="carousel-item">
-              <img src="/assets/img/slider/1.png" alt="Carousel Image">
-              <div class="carousel-caption">
-                <h1 class="animated fadeInLeft">Together, We Make a Home</h1>
-                <p class="animated fadeInRight" style="font-size: 20px;">Build a strong family foundation with our community and take courses that strengthen your bonds.</p>
-                <nuxt-link class="btn animated fadeInUp" to="program">Program</nuxt-link>
-              </div>
-          </div>
+<!--          <div class="carousel-item">-->
+<!--              <img src="/assets/img/slider/1.png" alt="Carousel Image">-->
+<!--              <div class="carousel-caption">-->
+<!--                <h1 class="animated fadeInLeft">Together, We Make a Home</h1>-->
+<!--                <p class="animated fadeInRight" style="font-size: 20px;">Build a strong family foundation with our community and take courses that strengthen your bonds.</p>-->
+<!--                <nuxt-link class="btn animated fadeInUp" to="program">Program</nuxt-link>-->
+<!--              </div>-->
+<!--          </div>-->
 
-          <div class="carousel-item">
-              <img src="/assets/img/slider/1.png" alt="Carousel Image">
-              <div class="carousel-caption">
-                <h1 class="animated fadeInLeft">Guiding Every Step of the Way</h1>
-                <p class="animated fadeInRight" style="font-size: 20px;">Discover how our community can support you in guiding your child's journey. Explore our events and courses today</p>
-                <nuxt-link class="btn animated fadeInUp" to="program">Program</nuxt-link>
-              </div>
-          </div>
+<!--          <div class="carousel-item">-->
+<!--              <img src="/assets/img/slider/1.png" alt="Carousel Image">-->
+<!--              <div class="carousel-caption">-->
+<!--                <h1 class="animated fadeInLeft">Guiding Every Step of the Way</h1>-->
+<!--                <p class="animated fadeInRight" style="font-size: 20px;">Discover how our community can support you in guiding your child's journey. Explore our events and courses today</p>-->
+<!--                <nuxt-link class="btn animated fadeInUp" to="program">Program</nuxt-link>-->
+<!--              </div>-->
+<!--          </div>-->
         </div>
 
         <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
@@ -245,7 +245,7 @@
                 </div>
                 <div class="pera" style="margin-top: 20px">
                   <h5 style="text-align: center;font-weight: bold">{{ event.title }}</h5>
-                  <p style="text-align: center">Lorem ipsum Lorem ipsum</p>
+<!--                  <p style="text-align: center">Lorem ipsum Lorem ipsum</p>-->
                 </div>
                 <div class="team-text">
                   <div class="row">
@@ -256,7 +256,7 @@
                       </p>
                     </div>
                     <div class="col-lg-6 col-md-6">
-                      <p style="text-align: left;margin-left: 10px">View Details
+                      <p style="text-align: left;margin-left: 10px" data-toggle="modal" data-target=".bd-example-modal-lg" @click="blogDetails(event)">View Details
                         <img src="/assets/img/icon/right-arrow.png" style="margin-left: 5px;" alt="">
                       </p>
                     </div>
@@ -584,6 +584,27 @@
         </div>
       </div>
       <!-- Blog End -->
+
+      <!-- Modal -->
+      <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">{{ blog_details.title }}</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p v-html="blog_details.description"></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 </template>
 
@@ -602,7 +623,9 @@ export default {
     return {
       programs : [],
       events : [],
+      sliders : [],
       brands: [],
+      blog_details: {}
     };
   },
   mounted() {
@@ -610,6 +633,7 @@ export default {
         this.loadSlickSlider()
         this.getAllProgram()
         this.getAllEvents()
+        this.getAllSlider()
     },
     methods: {
       getAllProgram(){
@@ -618,9 +642,15 @@ export default {
         }).catch((error)=>{
         })
       },
+      getAllSlider(){
+        this.$axios.get( base_url + 'api/get-all-slider').then((response)=>{
+          console.log(response)
+          this.sliders = response.data.data;
+        }).catch((error)=>{
+        })
+      },
       getAllEvents(){
         this.$axios.get( base_url + 'api/get-all-events').then((response)=>{
-          console.log(response)
           this.events = response.data.data;
         }).catch((error)=>{
         })
@@ -630,6 +660,9 @@ export default {
       },
       eventImage(image){
         return base_url + "images/event/"+ image;
+      },
+      sliderImage(image){
+        return base_url + "images/slider/"+ image;
       },
       loadSlickSlider(){
         // Testimonial Slider
@@ -652,6 +685,10 @@ export default {
           asNavFor: '.testimonial-slider'
         });
         $('.testimonial .slider-nav').css({"position": "relative", "height": "160px"});
+      },
+      blogDetails(event){
+        this.blog_details = event
+        $("#blogModal").modal("show");
       }
     },
 }

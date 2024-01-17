@@ -6,7 +6,7 @@
           <div class="col-md-6">
             <br>
             <br>
-            <p style="background: #030F27;padding: 8px;color: white">Welcome To Customer Panel</p>
+            <p style="background: #030F27;padding: 8px;color: white">Welcome To Member Panel</p>
 
             <form @submit.prevent="UpdateProfile" @keydown="form.onKeydown($event)">
               <div class="control-group">

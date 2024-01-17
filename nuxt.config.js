@@ -22,6 +22,7 @@ export default {
     script: [
       { src: 'https://code.jquery.com/jquery-3.4.1.min.js' },
       { src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js' },
+      { src: 'https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js' },
       { src: '/assets/lib/easing/easing.min.js' },
       { src: '/assets/lib/wow/wow.min.js' },
       { src: '/assets/lib/owlcarousel/owl.carousel.min.js' },

@@ -30,7 +30,7 @@
                 <i class="flaticon-address"></i>
                 <div class="contact-text">
                   <h2>Location</h2>
-                  <p>123 Street, New York, USA</p>
+                  <p>123 Street, Demo, CA</p>
                 </div>
               </div>
               <div class="contact-item">
@@ -44,7 +44,7 @@
                 <i class="flaticon-send-mail"></i>
                 <div class="contact-text">
                   <h2>Email</h2>
-                  <p>info@example.com</p>
+                  <p>info@dadhq.com</p>
                 </div>
               </div>
             </div>
@@ -88,7 +88,7 @@ export default {
   auth:false,
   head() {
     return {
-      title: "Contact | Market Exchange"
+      title: "Contact | DadHQ"
     };
   },
 }

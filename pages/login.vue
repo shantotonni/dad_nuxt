@@ -20,7 +20,7 @@
     <div class="contact wow fadeInUp">
       <div class="container">
         <div class="section-header text-center">
-          <h2>For Login</h2>
+          <h2>For Member Login</h2>
         </div>
         <div class="row">
           <div class="col-md-3">
