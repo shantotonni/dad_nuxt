@@ -65,60 +65,24 @@
             <div class="card wow fadeInLeft" data-wow-delay="0.1s">
               <div class="card-header">
                 <a class="card-link collapsed" data-toggle="collapse" href="#collapseOne">
-                  Lorem ipsum dolor sit amet?
+                  Who is this Program for?
                 </a>
               </div>
               <div id="collapseOne" class="collapse" data-parent="#accordion-1">
                 <div class="card-body">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                </div>
-              </div>
-            </div>
-            <div class="card wow fadeInLeft" data-wow-delay="0.2s">
-              <div class="card-header">
-                <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo">
-                  Lorem ipsum dolor sit amet?
-                </a>
-              </div>
-              <div id="collapseTwo" class="collapse" data-parent="#accordion-1">
-                <div class="card-body">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                  For fathers who want to build strong meaningful connections with their children.
                 </div>
               </div>
             </div>
             <div class="card wow fadeInLeft" data-wow-delay="0.3s">
               <div class="card-header">
                 <a class="card-link collapsed" data-toggle="collapse" href="#collapseThree">
-                  Lorem ipsum dolor sit amet?
+                  Where is this program held?
                 </a>
               </div>
               <div id="collapseThree" class="collapse" data-parent="#accordion-1">
                 <div class="card-body">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                </div>
-              </div>
-            </div>
-            <div class="card wow fadeInLeft" data-wow-delay="0.4s">
-              <div class="card-header">
-                <a class="card-link collapsed" data-toggle="collapse" href="#collapseFour">
-                  Lorem ipsum dolor sit amet?
-                </a>
-              </div>
-              <div id="collapseFour" class="collapse" data-parent="#accordion-1">
-                <div class="card-body">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                </div>
-              </div>
-            </div>
-            <div class="card wow fadeInLeft" data-wow-delay="0.5s">
-              <div class="card-header">
-                <a class="card-link collapsed" data-toggle="collapse" href="#collapseFive">
-                  Lorem ipsum dolor sit amet?
-                </a>
-              </div>
-              <div id="collapseFive" class="collapse" data-parent="#accordion-1">
-                <div class="card-body">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                  You’re A Great Dad and The Shepherd can be offered virtually or on site
                 </div>
               </div>
             </div>
@@ -126,63 +90,19 @@
         </div>
         <div class="col-md-6">
           <div id="accordion-2">
-            <div class="card wow fadeInRight" data-wow-delay="0.1s">
+            <div class="card wow fadeInLeft" data-wow-delay="0.2s">
               <div class="card-header">
-                <a class="card-link collapsed" data-toggle="collapse" href="#collapseSix">
-                  Lorem ipsum dolor sit amet?
+                <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo">
+                  What does this program offer?
                 </a>
               </div>
-              <div id="collapseSix" class="collapse" data-parent="#accordion-2">
+              <div id="collapseTwo" class="collapse" data-parent="#accordion-1">
                 <div class="card-body">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                </div>
-              </div>
-            </div>
-            <div class="card wow fadeInRight" data-wow-delay="0.2s">
-              <div class="card-header">
-                <a class="card-link collapsed" data-toggle="collapse" href="#collapseSeven">
-                  Lorem ipsum dolor sit amet?
-                </a>
-              </div>
-              <div id="collapseSeven" class="collapse" data-parent="#accordion-2">
-                <div class="card-body">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                </div>
-              </div>
-            </div>
-            <div class="card wow fadeInRight" data-wow-delay="0.3s">
-              <div class="card-header">
-                <a class="card-link collapsed" data-toggle="collapse" href="#collapseEight">
-                  Lorem ipsum dolor sit amet?
-                </a>
-              </div>
-              <div id="collapseEight" class="collapse" data-parent="#accordion-2">
-                <div class="card-body">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                </div>
-              </div>
-            </div>
-            <div class="card wow fadeInRight" data-wow-delay="0.4s">
-              <div class="card-header">
-                <a class="card-link collapsed" data-toggle="collapse" href="#collapseNine">
-                  Lorem ipsum dolor sit amet?
-                </a>
-              </div>
-              <div id="collapseNine" class="collapse" data-parent="#accordion-2">
-                <div class="card-body">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                </div>
-              </div>
-            </div>
-            <div class="card wow fadeInRight" data-wow-delay="0.5s">
-              <div class="card-header">
-                <a class="card-link collapsed" data-toggle="collapse" href="#collapseTen">
-                  Lorem ipsum dolor sit amet?
-                </a>
-              </div>
-              <div id="collapseTen" class="collapse" data-parent="#accordion-2">
-                <div class="card-body">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                  - Highlighting the importance of engaging fathers in the lives of their children
+
+                  - Developing effective communication strategies
+
+                  - Understanding your child’s emotional and social development
                 </div>
               </div>
             </div>

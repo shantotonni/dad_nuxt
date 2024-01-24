@@ -179,12 +179,13 @@
       <div class="fact">
         <div class="container-fluid">
           <div class="row counters">
-            <div class="col-md-6 fact-left wow slideInLeft" v-for="(program, i) in programs" :key="program.id" v-if="programs.length">
+            <div class="col-md-6 fact-left wow slideInLeft" v-for="(program, i) in programs" :key="program.id" v-if="programs.length" style="padding-bottom: 0px!important;">
               <div class="row" style="background: #F6F0E0;padding: 20px;margin: 0 auto;box-shadow: 0px 0px 12px 12px #e7e6e0;">
                 <div class="col-6 col-sm-6">
                   <div class="fact-text" style="margin-top: 60px;">
                     <h2 style="color: #00A8FF;font-size: 25px">{{ program.title }}</h2>
-                    <p style="color: black;font-size: 12px">{{ program.short }}</p>
+                    <p style="font-size: 11px"><span>Date : {{ program.program_date }}</span> <span style="margin-left: 11px">Time: {{ program.program_time }}</span></p>
+                    <p style="color: black;font-size: 14px">{{ program.short }}</p>
                     <nuxt-link :to="`/program-details/${program.id}`" class="btn" style="background: #00A8FF;padding: 11px 14px;color: white;margin-top: 15px;font-size: 13px">View Details</nuxt-link>
                   </div>
                 </div>
@@ -201,17 +202,17 @@
       <!-- Fact End -->
 
       <!-- Video Start -->
-      <h2 style="text-align: center;margin-top: 100px">Lorem ipsum dolor sit amet</h2>
+<!--      <h2 style="text-align: center;margin-top: 100px">Lorem ipsum dolor sit amet</h2>-->
 
-      <div class="col-md-6 offset-md-3">
-        <div class="video wow fadeIn" data-wow-delay="0.1s">
-          <div class="container">
-            <button type="button" class="btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
-              <span></span>
-            </button>
-          </div>
-        </div>
-      </div>
+<!--      <div class="col-md-6 offset-md-3">-->
+<!--        <div class="video wow fadeIn" data-wow-delay="0.1s">-->
+<!--          <div class="container">-->
+<!--            <button type="button" class="btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">-->
+<!--              <span></span>-->
+<!--            </button>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
 
       <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -234,8 +235,8 @@
       <div class="team">
         <div class="container">
           <div class="section-header text-center">
-            <h2>Event</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <h2>Events</h2>
+<!--            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
           </div>
           <div class="row">
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s" v-for="(event, i) in events" :key="event.id" v-if="events.length">
@@ -273,50 +274,31 @@
       <div class="team" style="background: white">
         <div class="container">
           <div class="section-header text-center">
-            <h2>Meet Our Expert Instructors</h2>
+            <h2>Meet Our Expert Instructor</h2>
           </div>
           <div class="row">
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="col-lg-5 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
               <div class="team-item" style="box-shadow: 0px 0px 12px 12px #f1eeee;">
                 <div class="team-img">
                   <img src="/assets/img/meet/1.png" alt="Team Image">
                 </div>
-                <div class="pera" style="margin-top: 20px;margin-left: 15px">
-                  <h5 style="font-weight: bold">Faisal Ahmed<img src="/assets/img/icon/star.png" alt=""></h5>
-                  <p>Founder</p>
-                </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="col-lg-7 col-md-7 wow fadeInUp" data-wow-delay="0.1s">
               <div class="team-item" style="box-shadow: 0px 0px 12px 12px #f1eeee;">
-                <div class="team-img">
-                  <img src="/assets/img/meet/2.png" alt="Team Image">
-                </div>
                 <div class="pera" style="margin-top: 20px;margin-left: 15px">
-                  <h5 style="font-weight: bold">Lorem ipsum <img src="/assets/img/icon/star.png" alt=""></h5>
-                  <p>Lorem ipsum Lorem ipsum</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="team-item" style="box-shadow: 0px 0px 12px 12px #f1eeee;">
-                <div class="team-img">
-                  <img src="/assets/img/meet/3.png" alt="Team Image">
-                </div>
-                <div class="pera" style="margin-top: 20px;margin-left: 15px">
-                  <h5 style="font-weight: bold">Lorem ipsum <img src="/assets/img/icon/star.png" alt=""></h5>
-                  <p>Lorem ipsum Lorem ipsum</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="team-item" style="box-shadow: 0px 0px 12px 12px #f1eeee;">
-                <div class="team-img">
-                  <img src="/assets/img/meet/4.png" alt="Team Image">
-                </div>
-                <div class="pera" style="margin-top: 20px;margin-left: 15px">
-                  <h5 style="font-weight: bold">Lorem ipsum <img src="/assets/img/icon/star.png" alt=""></h5>
-                  <p>Lorem ipsum Lorem ipsum</p>
+                  <h5 style="font-weight: bold">{{ instructor.name }}</h5>
+                  <p v-html="instructor.description"></p>
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                      <h5 style="font-weight: bold">Educational Qualification</h5>
+                      <p v-html="instructor.educational_qualification"></p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                      <h5 style="font-weight: bold">Experience</h5>
+                      <p v-html="instructor.experience"></p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -338,60 +320,24 @@
                 <div class="card wow fadeInLeft" data-wow-delay="0.1s">
                   <div class="card-header">
                     <a class="card-link collapsed" data-toggle="collapse" href="#collapseOne">
-                      Lorem ipsum dolor sit amet?
+                      Who is this Program for?
                     </a>
                   </div>
                   <div id="collapseOne" class="collapse" data-parent="#accordion-1">
                     <div class="card-body">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                    </div>
-                  </div>
-                </div>
-                <div class="card wow fadeInLeft" data-wow-delay="0.2s">
-                  <div class="card-header">
-                    <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo">
-                      Lorem ipsum dolor sit amet?
-                    </a>
-                  </div>
-                  <div id="collapseTwo" class="collapse" data-parent="#accordion-1">
-                    <div class="card-body">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                      For fathers who want to build strong meaningful connections with their children.
                     </div>
                   </div>
                 </div>
                 <div class="card wow fadeInLeft" data-wow-delay="0.3s">
                   <div class="card-header">
                     <a class="card-link collapsed" data-toggle="collapse" href="#collapseThree">
-                      Lorem ipsum dolor sit amet?
+                      Where is this program held?
                     </a>
                   </div>
                   <div id="collapseThree" class="collapse" data-parent="#accordion-1">
                     <div class="card-body">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                    </div>
-                  </div>
-                </div>
-                <div class="card wow fadeInLeft" data-wow-delay="0.4s">
-                  <div class="card-header">
-                    <a class="card-link collapsed" data-toggle="collapse" href="#collapseFour">
-                      Lorem ipsum dolor sit amet?
-                    </a>
-                  </div>
-                  <div id="collapseFour" class="collapse" data-parent="#accordion-1">
-                    <div class="card-body">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                    </div>
-                  </div>
-                </div>
-                <div class="card wow fadeInLeft" data-wow-delay="0.5s">
-                  <div class="card-header">
-                    <a class="card-link collapsed" data-toggle="collapse" href="#collapseFive">
-                      Lorem ipsum dolor sit amet?
-                    </a>
-                  </div>
-                  <div id="collapseFive" class="collapse" data-parent="#accordion-1">
-                    <div class="card-body">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                      You’re A Great Dad and The Shepherd can be offered virtually or on site
                     </div>
                   </div>
                 </div>
@@ -399,63 +345,19 @@
             </div>
             <div class="col-md-6">
               <div id="accordion-2">
-                <div class="card wow fadeInRight" data-wow-delay="0.1s">
+                <div class="card wow fadeInLeft" data-wow-delay="0.2s">
                   <div class="card-header">
-                    <a class="card-link collapsed" data-toggle="collapse" href="#collapseSix">
-                      Lorem ipsum dolor sit amet?
+                    <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo">
+                      What does this program offer?
                     </a>
                   </div>
-                  <div id="collapseSix" class="collapse" data-parent="#accordion-2">
+                  <div id="collapseTwo" class="collapse" data-parent="#accordion-1">
                     <div class="card-body">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                    </div>
-                  </div>
-                </div>
-                <div class="card wow fadeInRight" data-wow-delay="0.2s">
-                  <div class="card-header">
-                    <a class="card-link collapsed" data-toggle="collapse" href="#collapseSeven">
-                      Lorem ipsum dolor sit amet?
-                    </a>
-                  </div>
-                  <div id="collapseSeven" class="collapse" data-parent="#accordion-2">
-                    <div class="card-body">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                    </div>
-                  </div>
-                </div>
-                <div class="card wow fadeInRight" data-wow-delay="0.3s">
-                  <div class="card-header">
-                    <a class="card-link collapsed" data-toggle="collapse" href="#collapseEight">
-                      Lorem ipsum dolor sit amet?
-                    </a>
-                  </div>
-                  <div id="collapseEight" class="collapse" data-parent="#accordion-2">
-                    <div class="card-body">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                    </div>
-                  </div>
-                </div>
-                <div class="card wow fadeInRight" data-wow-delay="0.4s">
-                  <div class="card-header">
-                    <a class="card-link collapsed" data-toggle="collapse" href="#collapseNine">
-                      Lorem ipsum dolor sit amet?
-                    </a>
-                  </div>
-                  <div id="collapseNine" class="collapse" data-parent="#accordion-2">
-                    <div class="card-body">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                    </div>
-                  </div>
-                </div>
-                <div class="card wow fadeInRight" data-wow-delay="0.5s">
-                  <div class="card-header">
-                    <a class="card-link collapsed" data-toggle="collapse" href="#collapseTen">
-                      Lorem ipsum dolor sit amet?
-                    </a>
-                  </div>
-                  <div id="collapseTen" class="collapse" data-parent="#accordion-2">
-                    <div class="card-body">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                      - Highlighting the importance of engaging fathers in the lives of their children
+
+                      - Developing effective communication strategies
+
+                      - Understanding your child’s emotional and social development
                     </div>
                   </div>
                 </div>
@@ -518,65 +420,13 @@
         <div class="container">
           <div class="section-header text-center">
             <h2>Partner</h2>
-            <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. </p>
+<!--            <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. </p>-->
           </div>
           <div class="row">
-            <div class="col-lg-3 col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="col-lg-3 col-md-4 wow fadeInUp" data-wow-delay="0.1s" v-for="(partner, i) in partners" :key="partner.id" v-if="partners.length">
               <div class="team-item" style="box-shadow: 0px 0px 12px 12px #f1eeee;background: white;padding: 15px 0;text-align: center;border-radius: 15px">
                 <div class="team-img" style="border-style: dashed;margin: 0px 10px;padding: 15px;border-radius: 15px;color: #F6F4EF">
-                  <img src="/assets/img/partner/1.png" alt="Team Image">
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="team-item" style="box-shadow: 0px 0px 12px 12px #f1eeee;background: white;padding: 15px 0;text-align: center;border-radius: 15px">
-                <div class="team-img" style="border-style: dashed;margin: 0px 10px;padding: 15px;border-radius: 15px;color: #F6F4EF">
-                  <img src="/assets/img/partner/1.png" alt="Team Image">
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="team-item" style="box-shadow: 0px 0px 12px 12px #f1eeee;background: white;padding: 15px 0;text-align: center;border-radius: 15px">
-                <div class="team-img" style="border-style: dashed;margin: 0px 10px;padding: 15px;border-radius: 15px;color: #F6F4EF">
-                  <img src="/assets/img/partner/1.png" alt="Team Image">
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="team-item" style="box-shadow: 0px 0px 12px 12px #f1eeee;background: white;padding: 15px 0;text-align: center;border-radius: 15px">
-                <div class="team-img" style="border-style: dashed;margin: 0px 10px;padding: 15px;border-radius: 15px;color: #F6F4EF">
-                  <img src="/assets/img/partner/1.png" alt="Team Image">
-                </div>
-              </div>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-lg-3 col-md-4 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="team-item" style="box-shadow: 0px 0px 12px 12px #f1eeee;background: white;padding: 15px 0;text-align: center;border-radius: 15px">
-                <div class="team-img" style="border-style: dashed;margin: 0px 10px;padding: 15px;border-radius: 15px;color: #F6F4EF">
-                  <img src="/assets/img/partner/1.png" alt="Team Image">
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="team-item" style="box-shadow: 0px 0px 12px 12px #f1eeee;background: white;padding: 15px 0;text-align: center;border-radius: 15px">
-                <div class="team-img" style="border-style: dashed;margin: 0px 10px;padding: 15px;border-radius: 15px;color: #F6F4EF">
-                  <img src="/assets/img/partner/1.png" alt="Team Image">
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="team-item" style="box-shadow: 0px 0px 12px 12px #f1eeee;background: white;padding: 15px 0;text-align: center;border-radius: 15px">
-                <div class="team-img" style="border-style: dashed;margin: 0px 10px;padding: 15px;border-radius: 15px;color: #F6F4EF">
-                  <img src="/assets/img/partner/1.png" alt="Team Image">
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="team-item" style="box-shadow: 0px 0px 12px 12px #f1eeee;background: white;padding: 15px 0;text-align: center;border-radius: 15px">
-                <div class="team-img" style="border-style: dashed;margin: 0px 10px;padding: 15px;border-radius: 15px;color: #F6F4EF">
-                  <img src="/assets/img/partner/1.png" alt="Team Image">
+                  <img :src="partnerImage(partner.image)" alt="Team Image">
                 </div>
               </div>
             </div>
@@ -604,7 +454,6 @@
           </div>
         </div>
       </div>
-
     </div>
 </template>
 
@@ -622,6 +471,8 @@ export default {
   data() {
     return {
       programs : [],
+      partners : [],
+      instructor : [],
       events : [],
       sliders : [],
       brands: [],
@@ -634,6 +485,8 @@ export default {
         this.getAllProgram()
         this.getAllEvents()
         this.getAllSlider()
+        this.getInstructor()
+        this.getAllPartner()
     },
     methods: {
       getAllProgram(){
@@ -655,6 +508,19 @@ export default {
         }).catch((error)=>{
         })
       },
+      getInstructor(){
+        this.$axios.get( base_url + 'api/get-instructor').then((response)=>{
+          console.log(response.data.data[0])
+          this.instructor = response.data.data[0];
+        }).catch((error)=>{
+        })
+      },
+      getAllPartner(){
+        this.$axios.get( base_url + 'api/get-all-partner').then((response)=>{
+          this.partners = response.data.data;
+        }).catch((error)=>{
+        })
+      },
       programImage(image){
         return base_url + "images/program/"+ image;
       },
@@ -663,6 +529,9 @@ export default {
       },
       sliderImage(image){
         return base_url + "images/slider/"+ image;
+      },
+      partnerImage(image){
+        return base_url + "images/partner/"+ image;
       },
       loadSlickSlider(){
         // Testimonial Slider

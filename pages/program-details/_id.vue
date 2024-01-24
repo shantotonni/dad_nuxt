@@ -34,12 +34,11 @@
                   <img :src="programImage(program.image)" style="height: 240px" class="img-fluid" alt="">
                 </div>
               </div>
-
               <div class="col-12 col-sm-12">
                 <p v-html="program.description" style="margin-top: 10px;color: black"> </p>
-                <a class="btn btn-primary px-3" style="color: white" @click="programJoin(program.id)" v-if="$auth.loggedIn !== false">Join Now</a>
-                <nuxt-link to="/login" class="btn btn-primary px-3" v-else>Join Now</nuxt-link>
-
+<!--                <a class="btn btn-primary px-3" style="color: white" @click="programJoin(program.id)" v-if="$auth.loggedIn !== false">Join Now</a>-->
+<!--                <nuxt-link to="/login" class="btn btn-primary px-3" v-else>Join Now</nuxt-link>-->
+                <nuxt-link :to="`/join-program/${program.id}`" class="btn" style="background: #00A8FF;padding: 11px 14px;color: white;margin-top: 15px;font-size: 13px">Join Now</nuxt-link>
               </div>
             </div>
           </div>
