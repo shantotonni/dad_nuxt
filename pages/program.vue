@@ -25,7 +25,7 @@
               <div class="col-6 col-sm-6">
                 <div class="fact-text" style="margin-top: 60px;">
                   <h2 style="color: #00A8FF;font-size: 25px">{{ program.title }}</h2>
-                  <p style="font-size: 11px"><span>Date : {{ program.program_date }}</span> <span style="margin-left: 11px">Time: {{ program.program_time }}</span></p>
+<!--                  <p style="font-size: 11px"><span>Date : {{ program.program_date }}</span> <span style="margin-left: 11px">Time: {{ program.program_time }}</span></p>-->
                   <p style="color: black;font-size: 15px">{{ program.short }}</p>
                 </div>
               </div>
@@ -38,7 +38,7 @@
                 <p v-html="program.description" style="margin-top: 10px;color: black"> </p>
 <!--                <a class="btn btn-primary px-3" style="color: white" @click="programJoin(program.id)" v-if="$auth.loggedIn !== false">Join Now</a>-->
 <!--                <nuxt-link to="/login" class="btn btn-primary px-3" v-else>Join Now</nuxt-link>-->
-                <nuxt-link :to="`/join-program/${program.id}`" class="btn" style="background: #00A8FF;padding: 11px 14px;color: white;margin-top: 15px;font-size: 13px">Join Now</nuxt-link>
+<!--                <nuxt-link :to="`/join-program/${program.id}`" class="btn" style="background: #00A8FF;padding: 11px 14px;color: white;margin-top: 15px;font-size: 13px">Join Now</nuxt-link>-->
               </div>
             </div>
           </div>
@@ -80,7 +80,7 @@ export default {
       return base_url + "images/program/"+ image;
     },
     programJoin(id){
-      this.$axios.get( base_url + 'api/join-program?ProgramId=' + id, {headers:{Authorization : this.$auth.strategy.token.get() }}).then((response)=>{
+      this.$axios.get( base_url + 'api/join-event?ProgramId=' + id, {headers:{Authorization : this.$auth.strategy.token.get() }}).then((response)=>{
         this.$toaster.success("Successfully Submitted! Please Go to Your Profile");
       }).catch((error)=>{
       })

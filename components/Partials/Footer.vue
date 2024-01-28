@@ -7,8 +7,8 @@
           <div class="col-md-6 col-lg-4">
              <div class="footer-link">
               <h2>Contact Us</h2>
-              <p>Send an Email at dadhq@example.com</p>
-              <p>Call us: 123-4456-789</p>
+              <p>Send an Email at faisela@gmail.com</p>
+              <p>Call us: 780 297 5057</p>
 <!--              <p>Address: </p>-->
             </div>
           </div>

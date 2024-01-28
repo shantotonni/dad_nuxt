@@ -152,11 +152,17 @@
               </div>
               <div class="about-text">
                 <p>
-                  Welcome to a community of beloved fathers, where our shared commitment to nurturing and supporting each other sets us apart. Here, we embrace the journey of fatherhood and all its joys and challenges. Join us as we explore what defines us as fathers and how we can collectively grow in this beautiful journey of parenthood.
+                  A Great Dad Academy was founded by Faisel Ahmed in September 2023. After 10 years of providing programs catered for fathers,
+                  Faisel understood and saw the importance of parenting programs for fathers and launched A Great Dad Academy.  Previously, Mr. Ahmed spent over 10 years presenting,
+                  researching content that would empower fathers to understand the impact of their roles in the lives of their children and family.
                 </p>
-                <p style="margin-bottom: 6px"><img src="/assets/img/icon/1.png" alt="" style="height: 18px;width: 17px;"> <span style="font-size: 14px;margin-left: 5px;color: black">•	Expertise and Quality: Dive into expertly crafted courses that prioritize depth and excellence in content.</span></p>
-                <p style="margin-bottom: 6px"><img src="/assets/img/icon/1.png" alt="" style="height: 18px;width: 17px"> <span style="font-size: 14px;margin-left: 5px;color: black">•	Engaging Learning: Immerse yourself in a dynamic learning environment that encourages active participation and exploration.</span></p>
-                <p><img src="/assets/img/icon/1.png" alt="" style="height: 18px;width: 17px"> <span style="font-size: 14px;margin-left: 5px;color: black">•	Customized Learning Paths: Tailor your educational journey to your preferences and pace, shaping your learning experience.</span></p>
+                <p style="margin-bottom: 6px"><img src="/assets/img/icon/1.png" alt="" style="height: 18px;width: 17px;">
+                  <span style="font-size: 14px;margin-left: 5px;color: black">
+                    GOAL: A Great Dad Academy aims to provide programs that empower fathers, relationship building and developing connections with peers.
+                  </span>
+                </p>
+<!--                <p style="margin-bottom: 6px"><img src="/assets/img/icon/1.png" alt="" style="height: 18px;width: 17px"> <span style="font-size: 14px;margin-left: 5px;color: black">•	Engaging Learning: Immerse yourself in a dynamic learning environment that encourages active participation and exploration.</span></p>-->
+<!--                <p><img src="/assets/img/icon/1.png" alt="" style="height: 18px;width: 17px"> <span style="font-size: 14px;margin-left: 5px;color: black">•	Customized Learning Paths: Tailor your educational journey to your preferences and pace, shaping your learning experience.</span></p>-->
 
                  <!--<div style="display: flex;background: #F5F4EF;padding: 17px;">
                   <img src="/assets/img/icon/2.png" style="height: 40px" alt="">
@@ -184,7 +190,7 @@
                 <div class="col-6 col-sm-6">
                   <div class="fact-text" style="margin-top: 60px;">
                     <h2 style="color: #00A8FF;font-size: 25px">{{ program.title }}</h2>
-                    <p style="font-size: 11px"><span>Date : {{ program.program_date }}</span> <span style="margin-left: 11px">Time: {{ program.program_time }}</span></p>
+<!--                    <p style="font-size: 11px"><span>Date : {{ program.program_date }}</span> <span style="margin-left: 11px">Time: {{ program.program_time }}</span></p>-->
                     <p style="color: black;font-size: 14px">{{ program.short }}</p>
                     <nuxt-link :to="`/program-details/${program.id}`" class="btn" style="background: #00A8FF;padding: 11px 14px;color: white;margin-top: 15px;font-size: 13px">View Details</nuxt-link>
                   </div>
@@ -239,27 +245,32 @@
 <!--            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
           </div>
           <div class="row">
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s" v-for="(event, i) in events" :key="event.id" v-if="events.length">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" v-for="(event, i) in events" :key="event.id" v-if="events.length">
               <div class="team-item" style="box-shadow: 0px 0px 12px 12px #e7e6e0;">
                 <div class="team-img">
-                  <img :src="eventImage(event.image)"  style="border-style: dotted;padding: 14px;color: #dfdbd5;height: 260px" alt="Team Image">
+                  <img :src="eventImage(event.image)"  style="border-style: dotted;padding: 14px;color: #dfdbd5;height: 330px" alt="Team Image">
                 </div>
                 <div class="pera" style="margin-top: 20px">
                   <h5 style="text-align: center;font-weight: bold">{{ event.title }}</h5>
-<!--                  <p style="text-align: center">Lorem ipsum Lorem ipsum</p>-->
+                  <p style="text-align: center;font-size: 12px">
+                    <span>Community Partner:</span>
+                    <span v-html="event.description"></span>
+                  </p>
                 </div>
                 <div class="team-text">
                   <div class="row">
-                    <div class="col-lg-6 col-md-6">
+                    <div class="col-lg-8 col-md-8">
                       <p style="text-align: left;margin-left: 10px">
                         <img src="/assets/img/icon/calendar.png" alt="">
-                        <span style="margin-left: 5px">8/21/2023</span>
+                        <span style="margin-left: 5px">{{ event.event_date }}</span>
                       </p>
                     </div>
-                    <div class="col-lg-6 col-md-6">
-                      <p style="text-align: left;margin-left: 10px" data-toggle="modal" data-target=".bd-example-modal-lg" @click="blogDetails(event)">View Details
-                        <img src="/assets/img/icon/right-arrow.png" style="margin-left: 5px;" alt="">
-                      </p>
+                    <div class="col-lg-4 col-md-4">
+                      <nuxt-link :to="`/join-event/${event.id}`" style="background: #00A8FF;color: white;font-size: 13px">Join Now</nuxt-link>
+<!--                      <p data-toggle="modal" style="text-align: right" data-target=".bd-example-modal-lg" @click="blogDetails(event)">-->
+<!--                        <nuxt-link :to="`/join-event/${event.id}`" class="btn" style="background: #00A8FF;padding: 11px 14px;color: white;margin-top: 15px;font-size: 13px">Join Now</nuxt-link>-->
+<!--&lt;!&ndash;                        <img src="/assets/img/icon/right-arrow.png" style="margin-left: 5px;" alt="">&ndash;&gt;-->
+<!--                      </p>-->
                     </div>
                   </div>
                 </div>
@@ -280,7 +291,7 @@
             <div class="col-lg-5 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
               <div class="team-item" style="box-shadow: 0px 0px 12px 12px #f1eeee;">
                 <div class="team-img">
-                  <img src="/assets/img/meet/1.png" alt="Team Image">
+                  <img :src="instructorImage(instructor.image)" alt="Team Image">
                 </div>
               </div>
             </div>
@@ -289,16 +300,16 @@
                 <div class="pera" style="margin-top: 20px;margin-left: 15px">
                   <h5 style="font-weight: bold">{{ instructor.name }}</h5>
                   <p v-html="instructor.description"></p>
-                  <div class="row">
-                    <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                      <h5 style="font-weight: bold">Educational Qualification</h5>
-                      <p v-html="instructor.educational_qualification"></p>
-                    </div>
-                    <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                      <h5 style="font-weight: bold">Experience</h5>
-                      <p v-html="instructor.experience"></p>
-                    </div>
-                  </div>
+<!--                  <div class="row">-->
+<!--                    <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">-->
+<!--                      <h5 style="font-weight: bold">Educational Qualification</h5>-->
+<!--                      <p v-html="instructor.educational_qualification"></p>-->
+<!--                    </div>-->
+<!--                    <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">-->
+<!--                      <h5 style="font-weight: bold">Experience</h5>-->
+<!--                      <p v-html="instructor.experience"></p>-->
+<!--                    </div>-->
+<!--                  </div>-->
                 </div>
               </div>
             </div>
@@ -374,14 +385,7 @@
           <div class="row">
             <div class="col-12">
               <div class="testimonial-slider-nav">
-                <div class="slider-nav"><img src="/assets/img/testimonial-1.jpg" alt="Testimonial"></div>
-                <div class="slider-nav"><img src="/assets/img/testimonial-2.jpg" alt="Testimonial"></div>
-                <div class="slider-nav"><img src="/assets/img/testimonial-3.jpg" alt="Testimonial"></div>
-                <div class="slider-nav"><img src="/assets/img/testimonial-4.jpg" alt="Testimonial"></div>
-                <div class="slider-nav"><img src="/assets/img/testimonial-1.jpg" alt="Testimonial"></div>
-                <div class="slider-nav"><img src="/assets/img/testimonial-2.jpg" alt="Testimonial"></div>
-                <div class="slider-nav"><img src="/assets/img/testimonial-3.jpg" alt="Testimonial"></div>
-                <div class="slider-nav"><img src="/assets/img/testimonial-4.jpg" alt="Testimonial"></div>
+
               </div>
             </div>
           </div>
@@ -529,6 +533,9 @@ export default {
       },
       sliderImage(image){
         return base_url + "images/slider/"+ image;
+      },
+      instructorImage(image){
+        return base_url + "images/instructor/"+ image;
       },
       partnerImage(image){
         return base_url + "images/partner/"+ image;

@@ -27,17 +27,20 @@
           </div>
           <div class="about-text">
             <p>
-              Welcome to a personalized learning experience designed to cater to your unique educational needs.
-              Our commitment to fostering your growth sets us apart. Discover what defines us:
+              A Great Dad Academy was founded by Faisel Ahmed in September 2023. After 10 years of providing programs catered for fathers,
+              Faisel understood and saw the importance of parenting programs for fathers and launched A Great Dad Academy.  Previously, Mr. Ahmed spent over 10 years presenting,
+              researching content that would empower fathers to understand the impact of their roles in the lives of their children and family.
             </p>
-            <p style="margin-bottom: 6px"><img src="/assets/img/icon/1.png" alt="" style="height: 18px;width: 17px;"> <span style="font-size: 14px;margin-left: 5px;color: black">Expertise and Quality: Dive into expertly crafted courses that prioritize depth and excellence in content.</span></p>
-            <p style="margin-bottom: 6px"><img src="/assets/img/icon/1.png" alt="" style="height: 18px;width: 17px"> <span style="font-size: 14px;margin-left: 5px;color: black">Engaging Learning: Immerse yourself in a dynamic learning environment that encourages active participation and exploration.</span></p>
-            <p><img src="/assets/img/icon/1.png" alt="" style="height: 18px;width: 17px"> <span style="font-size: 14px;margin-left: 5px;color: black">Customized Learning Paths: Tailor your educational journey to your preferences and pace, shaping your learning experience.</span></p>
-            <div style="display: flex;background: #F5F4EF;padding: 17px;">
-              <img src="/assets/img/icon/2.png" style="height: 40px" alt="">
-              <p style="margin-left: 10px;font-size: 13px;margin-bottom: 0px">Learn at your own pace, with lifetime
-                access on mobile and desktop.</p>
-            </div>
+            <p style="margin-bottom: 6px"><img src="/assets/img/icon/1.png" alt="" style="height: 18px;width: 17px;">
+              <span style="font-size: 14px;margin-left: 5px;color: black">
+                    GOAL: A Great Dad Academy aims to provide programs that empower fathers, relationship building and developing connections with peers.
+                  </span>
+            </p>
+<!--            <div style="display: flex;background: #F5F4EF;padding: 17px;">-->
+<!--              <img src="/assets/img/icon/2.png" style="height: 40px" alt="">-->
+<!--              <p style="margin-left: 10px;font-size: 13px;margin-bottom: 0px">Learn at your own pace, with lifetime-->
+<!--                access on mobile and desktop.</p>-->
+<!--            </div>-->
           </div>
         </div>
         <div class="col-lg-7 col-md-6">

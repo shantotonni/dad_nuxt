@@ -84,7 +84,7 @@ export default {
       return base_url + "images/program/"+ image;
     },
     programJoin(id){
-      this.$axios.get( base_url + 'api/join-program?ProgramId=' + id, {headers:{Authorization : this.$auth.strategy.token.get() }}).then((response)=>{
+      this.$axios.get( base_url + 'api/join-event?ProgramId=' + id, {headers:{Authorization : this.$auth.strategy.token.get() }}).then((response)=>{
         this.$toaster.success("Successfully Submitted! Please Go to Your Profile");
       }).catch((error)=>{
       })

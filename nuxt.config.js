@@ -1,7 +1,7 @@
 //for server
-//let api_url = 'https://backend.greatdad.ca/'
+let api_url = 'https://backend.greatdad.ca/'
 //for Local
-let api_url = 'http://127.0.0.1:8000/'
+//let api_url = 'http://127.0.0.1:8000/'
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target

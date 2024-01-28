@@ -77,7 +77,7 @@ export default {
         ages_of_children:'',
         ages_of_father:'',
        // want_to_receive_email:'',
-        program_id : this.$route.params.id
+        event_id : this.$route.params.id
       }),
     }
   },
@@ -89,11 +89,11 @@ export default {
   },
   methods: {
     joinProgram(){
-      this.form.post( base_url + 'api/join-program').then((response)=>{
+      this.form.post( base_url + 'api/join-event').then((response)=>{
         if (response.data.status === 'success'){
           this.$toaster.success("Successfully Applied")
           setTimeout(()=>{
-            this.$router.go();
+            this.$router.push('/');
           },1000)
         }
       }).catch((error)=>{

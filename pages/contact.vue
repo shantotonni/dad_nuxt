@@ -26,25 +26,25 @@
         <div class="row">
           <div class="col-md-6">
             <div class="contact-info">
-              <div class="contact-item">
-                <i class="flaticon-address"></i>
-                <div class="contact-text">
-                  <h2>Location</h2>
-                  <p>123 Street, Demo, CA</p>
-                </div>
-              </div>
+<!--              <div class="contact-item">-->
+<!--                <i class="flaticon-address"></i>-->
+<!--                <div class="contact-text">-->
+<!--                  <h2>Location</h2>-->
+<!--                  <p>123 Street, Demo, CA</p>-->
+<!--                </div>-->
+<!--              </div>-->
               <div class="contact-item">
                 <i class="flaticon-call"></i>
                 <div class="contact-text">
                   <h2>Phone</h2>
-                  <p>+012 345 67890</p>
+                  <p>780 297 5057</p>
                 </div>
               </div>
               <div class="contact-item">
                 <i class="flaticon-send-mail"></i>
                 <div class="contact-text">
                   <h2>Email</h2>
-                  <p>info@dadhq.com</p>
+                  <p>faisela@gmail.com</p>
                 </div>
               </div>
             </div>
