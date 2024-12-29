@@ -52,21 +52,21 @@
           <div class="col-md-6">
             <div class="contact-form">
               <div id="success"></div>
-              <form name="sentMessage" id="contactForm" novalidate="novalidate">
+              <form name="sentMessage" id="contactForm" novalidate="novalidate" @submit.prevent="store" @keydown="form.onKeydown($event)">
                 <div class="control-group">
-                  <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                  <input type="text" class="form-control" id="name" v-model="form.name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="control-group">
-                  <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                  <input type="email" class="form-control" id="email" v-model="form.email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="control-group">
-                  <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                  <input type="text" class="form-control" id="subject" v-model="form.subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="control-group">
-                  <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                  <textarea class="form-control" id="message" v-model="form.message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
                   <p class="help-block text-danger"></p>
                 </div>
                 <div>
@@ -83,6 +83,9 @@
 </template>
 
 <script>
+import Form from "vform";
+import {base_url} from "~/plugins/base_url";
+
 export default {
   name: "contact.vue",
   auth:false,
@@ -91,6 +94,26 @@ export default {
       title: "Contact | DadHQ"
     };
   },
+  data(){
+    return {
+      form: new Form({
+        id:'',
+        name:'',
+        email:'',
+        subject:'',
+        message:'',
+      }),
+    }
+  },
+  methods: {
+    store(){
+      this.form.post( base_url + 'api/contact-store').then((response)=>{
+        this.$toaster.success("Successfully Registered")
+      }).catch((error)=>{
+        //
+      })
+    },
+  }
 }
 </script>
 

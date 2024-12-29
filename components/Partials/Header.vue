@@ -16,7 +16,7 @@
               </nuxt-link>
             </div>
             <div class="navbar-nav ml-auto">
-              <nuxt-link to="/" class="nav-item nav-link active">Home</nuxt-link>
+              <nuxt-link to="/" class="nav-item nav-link">Home</nuxt-link>
               <nuxt-link to="/about" class="nav-item nav-link">About Us</nuxt-link>
               <nuxt-link to="/event" class="nav-item nav-link">Event</nuxt-link>
               <nuxt-link to="/program" class="nav-item nav-link">Program</nuxt-link>
@@ -42,8 +42,13 @@ export default {
   name: "Header",
   data(){
     return {
-      //
+      isActive: false,
     }
+  },
+  computed: {
+    menuClass() {
+      return this.isActive ? 'nuxt-link-active' : '';
+    },
   },
   methods: {
     logout(){
@@ -55,5 +60,7 @@ export default {
 </script>
 
 <style scoped>
-
+.nuxt-link-active {
+  color: #007bff!important;
+}
 </style>

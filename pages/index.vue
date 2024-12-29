@@ -291,7 +291,7 @@
             <div class="col-lg-5 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
               <div class="team-item" style="box-shadow: 0px 0px 12px 12px #f1eeee;">
                 <div class="team-img">
-                  <img :src="instructorImage(instructor.image)" alt="Team Image">
+                  <img :src="instructorImage(instructor.image)" alt="Team Image" style="width: 100%;height: 400px">
                 </div>
               </div>
             </div>
@@ -430,7 +430,7 @@
             <div class="col-lg-3 col-md-4 wow fadeInUp" data-wow-delay="0.1s" v-for="(partner, i) in partners" :key="partner.id" v-if="partners.length">
               <div class="team-item" style="box-shadow: 0px 0px 12px 12px #f1eeee;background: white;padding: 15px 0;text-align: center;border-radius: 15px">
                 <div class="team-img" style="border-style: dashed;margin: 0px 10px;padding: 15px;border-radius: 15px;color: #F6F4EF">
-                  <img :src="partnerImage(partner.image)" alt="Team Image">
+                  <img :src="partnerImage(partner.image)" alt="Team Image" style="height: 40px!important;">
                 </div>
               </div>
             </div>
