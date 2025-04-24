@@ -174,7 +174,7 @@ a:focus {
 
 .nav-bar .navbar {
     height: 100%;
-    background: #030f27 !important;
+    background: #FFB656 !important;
 }
 
 .navbar-dark .navbar-nav .nav-link,
@@ -208,8 +208,8 @@ a:focus {
 
 .nav-bar .btn:hover {
     color: #030f27;
-    background: #00ACFF;
-    border-color: #00ACFF;
+    background: #FFB656;
+    border-color: #FFB656;
 }
 
 @media (min-width: 992px) {
@@ -504,12 +504,12 @@ a:focus {
 }
 
 .feature .col-md-12 {
-    background: #00ACFF;
+    background: #FFB656;
 }
 
 .feature .col-md-12:nth-child(2n) {
     color: #030f27;
-    background: #63c7f7;
+    background: #d99b49;
 }
 
 .feature .feature-item {
@@ -1119,7 +1119,7 @@ a:focus {
 }
 
 .faqs .card-header [data-toggle="collapse"][aria-expanded="true"] {
-    background: #00ACFF;
+    background: #FFB656;
 }
 
 .faqs .card-header [data-toggle="collapse"]:after {
@@ -1130,7 +1130,7 @@ a:focus {
     font-size: 12px;
     font-weight: 900;
     transition: .5s;
-    background: #00ACFF;
+    background: #FFB656;
     border-radius: 50px;
     width: 40px;
     padding: 0 15px;
@@ -2083,9 +2083,9 @@ a:focus {
 /*******************************/
 .footer {
     position: relative;
-    margin-top: 45px;
+    /*margin-top: 45px;*/
     padding-top: 90px;
-    background: #030f27;
+    background: #FFB656;
     color: #ffffff;
 }
 

@@ -4,11 +4,12 @@
     <div class="footer wow fadeIn" data-wow-delay="0.3s">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-6">
              <div class="footer-link">
               <h2>Contact Us</h2>
-              <p>Send an Email at faisela@gmail.com</p>
-              <p>Call us: 780 297 5057</p>
+              <p>Edmonton, AB</p>
+              <p>Email Address: faisela@gmail.com</p>
+              <p>Phone Number: 780-297-5057</p>
 <!--              <p>Address: </p>-->
             </div>
           </div>
@@ -19,7 +20,7 @@
               <p>Call us: 123-4456-789</p>
             </div>
           </div> -->
-          <div class="col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-6">
             <div class="footer-link">
               <h2>Information</h2>
               <nuxt-link to="/about">About</nuxt-link>
@@ -28,14 +29,14 @@
               <nuxt-link to="/contact">Contact Us</nuxt-link>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="newsletter">
-              <h2>About</h2>
-              <p>
-                Welcome to a personalized learning experience designed to cater to your unique educational needs. Our commitment to fostering your growth sets us apart.
-              </p>
-            </div>
-          </div>
+<!--          <div class="col-md-6 col-lg-3">-->
+<!--            <div class="newsletter">-->
+<!--              <h2>About</h2>-->
+<!--              <p>-->
+<!--                Welcome to a personalized learning experience designed to cater to your unique educational needs. Our commitment to fostering your growth sets us apart.-->
+<!--              </p>-->
+<!--            </div>-->
+<!--          </div>-->
         </div>
       </div>
       <hr style="color: white">

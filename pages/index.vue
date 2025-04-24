@@ -58,8 +58,8 @@
                   <i class="flaticon-worker"></i>
                 </div>
                 <div class="feature-text">
-                  <h3>Our total registered member 900+</h3>
-                  <p>Join our thriving community of over 900 registered members today and be a part of something special.</p>
+                  <h3>Over 15+ community partners </h3>
+                  <p>We have collaborated with over 15 partners throughout Alberta.</p>
                 </div>
               </div>
             </div>
@@ -69,8 +69,8 @@
                   <i class="flaticon-building"></i>
                 </div>
                 <div class="feature-text">
-                  <h3>Expand Your Knowledge</h3>
-                  <p>Discover endless opportunities to expand your knowledge, opening new doors to personal growth.</p>
+                  <h3>Over 10 years of experience</h3>
+                  <p>We have over a decade of experience in working with families in the community.</p>
                 </div>
               </div>
             </div>
@@ -80,8 +80,8 @@
                   <i class="flaticon-call"></i>
                 </div>
                 <div class="feature-text">
-                  <h3>Embrace the Freedom of Lifelong Learning</h3>
-                  <p>Knowledge knows no bounds, and curiosity fuels your journey.</p>
+                  <h3>Join our journey</h3>
+                  <p>We focus on empowering fathers and supporting their roles.</p>
                 </div>
               </div>
             </div>
@@ -189,10 +189,10 @@
               <div class="row" style="background: #F6F0E0;padding: 20px;margin: 0 auto;box-shadow: 0px 0px 12px 12px #e7e6e0;">
                 <div class="col-6 col-sm-6">
                   <div class="fact-text" style="margin-top: 60px;">
-                    <h2 style="color: #00A8FF;font-size: 25px">{{ program.title }}</h2>
+                    <h2 style="color: rgb(255, 182, 86);font-size: 25px">{{ program.title }}</h2>
 <!--                    <p style="font-size: 11px"><span>Date : {{ program.program_date }}</span> <span style="margin-left: 11px">Time: {{ program.program_time }}</span></p>-->
                     <p style="color: black;font-size: 14px">{{ program.short }}</p>
-                    <nuxt-link :to="`/program-details/${program.id}`" class="btn" style="background: #00A8FF;padding: 11px 14px;color: white;margin-top: 15px;font-size: 13px">View Details</nuxt-link>
+                    <nuxt-link :to="`/program-details/${program.id}`" class="btn" style="background: #FFB656;padding: 11px 14px;color: white;margin-top: 15px;font-size: 13px">View Details</nuxt-link>
                   </div>
                 </div>
                 <div class="col-6 col-sm-6">
@@ -291,7 +291,7 @@
             <div class="col-lg-5 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
               <div class="team-item" style="box-shadow: 0px 0px 12px 12px #f1eeee;">
                 <div class="team-img">
-                  <img :src="instructorImage(instructor.image)" alt="Team Image" style="width: 100%;height: 400px">
+                  <img :src="instructorImage(instructor.image)" alt="Team Image" style="width: 100%;height: 500px">
                 </div>
               </div>
             </div>
@@ -393,23 +393,42 @@
             <div class="col-12">
               <div class="testimonial-slider">
                 <div class="slider-item">
-                  <h3>Yusuf</h3>
-                  <h4>Attendee March 2022</h4>
+<!--                  <h3>Yusuf</h3>-->
+<!--                  <h4>Attendee March 2022</h4>-->
                   <p>“Mr. Faisel was more of a friend rather than an instructor of this course. From one father to another he was caring, up lifting, and most importantly understanding of day to day father struggles.”</p>
                 </div>
                 <div class="slider-item">
+                  <p>
+                    “This program helped me understand my child’s feelings better, and helped me understand myself and how I parent my child.
+                    Because of this, I am able to be more of a positive parent and role model to my children.”
+                  </p>
+                </div>
+                <div class="slider-item">
+                  <p>
+                    “Faisel speaks in a calm and engaging manner. He presents topic specific to the discussion.
+                    He also cites real life scenarios which we may have experienced or not noticed in the first place.”
+                  </p>
+                </div>
+                <div class="slider-item">
+                  <p>
+                    “The program made me aware of what I’m doing wrong, and gave me “ammunitions” (in a good way) for dealing with my kids.
+                    Subjects are specific for dads, which I cannot just watch on social media.
+                    There is no specific way of raising children, but this program helps in choosing what works for myself and family. Thanks Faisel!”
+                  </p>
+                </div>
+                <div class="slider-item">
                   <h3></h3>
-                  <h4>Attendee March 2022</h4>
+<!--                  <h4>Attendee March 2022</h4>-->
                   <p>“This program made me realize so many little things such as how important it is to spend time with your children, and the impact it has on their development. ”</p>
                 </div>
                 <div class="slider-item">
                   <h3></h3>
-                  <h4>Attendee</h4>
+<!--                  <h4>Attendee</h4>-->
                   <p>“This course has highlighted many core areas that I want to practice in my day to day life. ”</p>
                 </div>
                 <div class="slider-item">
                   <h3></h3>
-                  <h4>Attendee</h4>
+<!--                  <h4>Attendee</h4>-->
                   <p>“The importance of listening to your children needs in a neutral way, and encouraging them to open up about their feelings. ”</p>
                 </div>
               </div>
@@ -420,7 +439,7 @@
       <!-- Testimonial End -->
 
       <!-- Blog Start -->
-      <div class="blog">
+      <div class="blog" v-if="partners.length">
         <div class="container">
           <div class="section-header text-center">
             <h2>Partner</h2>
