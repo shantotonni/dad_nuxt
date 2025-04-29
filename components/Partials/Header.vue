@@ -61,6 +61,6 @@ export default {
 
 <style scoped>
 .nuxt-link-active {
-  color: #007bff!important;
+  /*color: #007bff!important;*/
 }
 </style>

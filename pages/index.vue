@@ -55,7 +55,8 @@
             <div class="col-lg-4 col-md-12">
               <div class="feature-item">
                 <div class="feature-icon">
-                  <i class="flaticon-worker"></i>
+<!--                  <i class="flaticon-worker"></i>-->
+                  <img class="flaticon-worker" src="/assets/img/iamge/partners.png" alt="Image">
                 </div>
                 <div class="feature-text">
                   <h3>Over 15+ community partners </h3>
@@ -66,7 +67,8 @@
             <div class="col-lg-4 col-md-12">
               <div class="feature-item">
                 <div class="feature-icon">
-                  <i class="flaticon-building"></i>
+<!--                  <i class="flaticon-building"></i>-->
+                  <img class="flaticon-worker" src="/assets/img/iamge/year.png" alt="Image">
                 </div>
                 <div class="feature-text">
                   <h3>Over 10 years of experience</h3>
@@ -77,7 +79,8 @@
             <div class="col-lg-4 col-md-12">
               <div class="feature-item">
                 <div class="feature-icon">
-                  <i class="flaticon-call"></i>
+<!--                  <i class="flaticon-call"></i>-->
+                  <img class="flaticon-worker" src="/assets/img/iamge/join.png" alt="Image">
                 </div>
                 <div class="feature-text">
                   <h3>Join our journey</h3>
@@ -266,7 +269,7 @@
                       </p>
                     </div>
                     <div class="col-lg-4 col-md-4">
-                      <nuxt-link :to="`/join-event/${event.id}`" style="background: #00A8FF;color: white;font-size: 13px">Join Now</nuxt-link>
+                      <nuxt-link :to="`/join-event/${event.id}`" style="color: white;font-size: 13px">Join Now</nuxt-link>
 <!--                      <p data-toggle="modal" style="text-align: right" data-target=".bd-example-modal-lg" @click="blogDetails(event)">-->
 <!--                        <nuxt-link :to="`/join-event/${event.id}`" class="btn" style="background: #00A8FF;padding: 11px 14px;color: white;margin-top: 15px;font-size: 13px">Join Now</nuxt-link>-->
 <!--&lt;!&ndash;                        <img src="/assets/img/icon/right-arrow.png" style="margin-left: 5px;" alt="">&ndash;&gt;-->

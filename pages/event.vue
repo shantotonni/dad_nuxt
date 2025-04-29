@@ -45,11 +45,7 @@
                     </p>
                   </div>
                   <div class="col-lg-4 col-md-4">
-                    <nuxt-link :to="`/join-event/${event.id}`" style="background: #00A8FF;color: white;font-size: 13px">Join Now</nuxt-link>
-                    <!--                      <p data-toggle="modal" style="text-align: right" data-target=".bd-example-modal-lg" @click="blogDetails(event)">-->
-                    <!--                        <nuxt-link :to="`/join-event/${event.id}`" class="btn" style="background: #00A8FF;padding: 11px 14px;color: white;margin-top: 15px;font-size: 13px">Join Now</nuxt-link>-->
-                    <!--&lt;!&ndash;                        <img src="/assets/img/icon/right-arrow.png" style="margin-left: 5px;" alt="">&ndash;&gt;-->
-                    <!--                      </p>-->
+                    <nuxt-link :to="`/join-event/${event.id}`" style="color: white;font-size: 13px">Join Now</nuxt-link>
                   </div>
                 </div>
               </div>

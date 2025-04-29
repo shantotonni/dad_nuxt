@@ -45,8 +45,8 @@ a:focus {
 .back-to-top {
     position: fixed;
     display: none;
-    background: #00ACFF;
-    color: #121518;
+    background: black;
+    color: white;
     width: 44px;
     height: 44px;
     text-align: center;
@@ -59,7 +59,7 @@ a:focus {
 }
 
 .back-to-top:hover {
-    color: #00ACFF;
+    color: white;
     background: #121518;
 }
 
@@ -187,7 +187,7 @@ a:focus {
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active .nav-link.nuxt-link-active{
-    color: #00ACFF;
+    color: black;
     transition: none;
 }
 
@@ -388,12 +388,12 @@ a:focus {
     /*margin-bottom: 45px;*/
     padding: 90px 0;
     text-align: center;
-    background: #00ACFF;
+    background: #030f27;
 }
 
 .page-header h2 {
     position: relative;
-    color: #030f27;
+    color: white;
     font-size: 60px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -414,7 +414,7 @@ a:focus {
     position: relative;
     padding: 0 12px;
     font-size: 22px;
-    color: #030f27;
+    color: white;
 }
 
 .page-header a:hover {
@@ -533,7 +533,7 @@ a:focus {
     content: "";
     width: 80px;
     height: 80px;
-    top: -20px;
+    top: -10px;
     left: -10px;
     border: 2px dotted #ffffff;
     border-radius: 60px;
@@ -547,13 +547,13 @@ a:focus {
     height: 79px;
     top: -18px;
     left: -9px;
-    background: #030f27;
+    /*background: #030f27;*/
     border-radius: 60px;
     z-index: 2;
 }
 
 .feature .col-md-12:nth-child(2n) .feature-icon::after {
-    background: #00ACFF;
+    /*background: #00ACFF;*/
 }
 
 .feature .feature-icon [class^="flaticon-"]::before {
@@ -970,7 +970,7 @@ a:focus {
     position: relative;
     padding: 10px 0px;
     text-align: center;
-    background: #00ACFF;
+    background: #FFB656;
     transition: .5s;
 }
 
@@ -988,7 +988,7 @@ a:focus {
 }
 
 .team .team-item:hover .team-text {
-    background: #00ACFF;
+    background: #FFB656;
 }
 
 .team .team-item:hover .team-text h2 {
@@ -1967,7 +1967,7 @@ a:focus {
 }
 
 .contact .col-md-6:last-child {
-    background: #00ACFF;
+    background: #FFB656;
 }
 
 .contact .contact-info {
@@ -1988,7 +1988,7 @@ a:focus {
 
 .contact .contact-item [class^="flaticon-"]::before {
     margin: 0;
-    color: #00ACFF;
+    color: white;
     font-size: 40px;
 }
 
@@ -1999,7 +1999,7 @@ a:focus {
 }
 
 .contact .contact-text h2 {
-    color: #00ACFF;
+    color: white;
     font-size: 20px;
     font-weight: 600;
 }
@@ -2102,7 +2102,7 @@ a:focus {
     padding-bottom: 10px;
     font-size: 18px;
     font-weight: 600;
-    color: #00ACFF;
+    color: black;
 }
 
 .footer h2::after {
@@ -2244,7 +2244,7 @@ a:focus {
 }
 
 .footer .copyright p a {
-    color: #00ACFF;
+    color: black;
     font-weight: 500;
     letter-spacing: 1px;
 }

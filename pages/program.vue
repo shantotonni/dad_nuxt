@@ -24,7 +24,7 @@
             <div class="row" style="background: #F6F0E0;padding: 20px;margin: 0 auto;box-shadow: 0px 0px 12px 12px #e7e6e0;min-height: 760px">
               <div class="col-6 col-sm-6">
                 <div class="fact-text" style="margin-top: 60px;">
-                  <h2 style="color: #00A8FF;font-size: 25px">{{ program.title }}</h2>
+                  <h2 style="color: #FFB656;font-size: 25px">{{ program.title }}</h2>
 <!--                  <p style="font-size: 11px"><span>Date : {{ program.program_date }}</span> <span style="margin-left: 11px">Time: {{ program.program_time }}</span></p>-->
                   <p style="color: black;font-size: 15px">{{ program.short }}</p>
                 </div>
